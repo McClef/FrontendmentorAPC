@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2/family=Manrope:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+p {
+    color: hsl(212, 23%, 69%);
+}
+h2 {
+    color: hsl(214, 17%, 51%);
+    font-weight: 700;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#drawer > img {
+    width: 300px;
+    height: 280px;
+    border-radius: 10px 0px 0px 10px;
+}
+#description {
+    border: 1px solid #ccc;
+    background: white;
+    width: 400px;
+    height: 280px;
+    padding: 15px;
+    border-radius: 0px 10px 10px 0px;
+}
+.content {
+    padding: 10px;
+}
+.avatar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.michelle {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.michelle > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.text {
+    margin: 8px;
+}
+#btn {
+    position: relative; 
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin: 19px;
+}
+ #pop {
+    display: none;
+} 
+.prop > p {
+    letter-spacing: 4px
+}
+ .prop {
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    width: 250px;
+    height: 60px;
+    border-radius: 1.0em 1.0em 1.0em 1.0em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid grey;
+    margin-left: -195px;
+    margin-top: -65px;
+} 
+.triangle { 
+    display: block;
+    height: 30px;
+    width: 20px;
+    background-color: inherit;
+    border: inherit;
+    position: absolute;
+    bottom: -19px;
+    left: calc(50% - 8px);
+    clip-path: polygon(57% 0%, 100% 70%, 0% 100%);
+    transform: rotate(69deg);
+    border-radius: 0 0 0 0.25em;
+} 
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 700px) {
+    #drawer > img {
+        width: 350px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    #description {
+        width: 350px;
+        border-radius: 0px 0px 10px 10px;
+        margin-top: -4px;
+    }
+    .prop {
+        position: relative;
+        bottom: -79px;
+        right: -15px;
+        width: 350px;
+        border-radius: 0px 0px 10px 10px;
+        padding-right: 80px;
+    }
+    .triangle {
+        display: none;
+    }
+    #btn {
+        position: absolute;
+        z-index: 1;
+        padding: 10px;
+        right: 0px;
+        bottom: 5px;
+    }
+}
+
+
